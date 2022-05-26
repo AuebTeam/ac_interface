@@ -1,17 +1,20 @@
 package edu.aueb.ac_interface;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     TextView messageView;
-    Button btnGreek, btnEnglish;
+    ImageButton btnGreek, btnEnglish;
     Context context;
     Resources resources;
 
