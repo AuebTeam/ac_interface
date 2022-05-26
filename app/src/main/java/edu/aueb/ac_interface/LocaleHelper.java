@@ -7,14 +7,16 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Build;
 import android.preference.PreferenceManager;
+import android.util.Log;
 
 import java.util.Locale;
 
 public class LocaleHelper {
     private static final String SELECTED_LANGUAGE = "Locale.Helper.Selected.Language";
-
+    private static String lng = "en";
     // the method is used to set the language at runtime
     public static Context setLocale(Context context, String language) {
+        lng = language;
         persist(context, language);
 
         // updating the language for devices above android nougat
@@ -23,6 +25,17 @@ public class LocaleHelper {
         }
         // for devices having lower version of android os
         return updateResourcesLegacy(context, language);
+    }
+
+    public static Context setLocale(Context context) {
+        persist(context, lng);
+
+        // updating the language for devices above android nougat
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            return updateResources(context, lng);
+        }
+        // for devices having lower version of android os
+        return updateResourcesLegacy(context, lng);
     }
 
     private static void persist(Context context, String language) {

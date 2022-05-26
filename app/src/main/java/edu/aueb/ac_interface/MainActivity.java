@@ -2,12 +2,11 @@ package edu.aueb.ac_interface;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -24,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // referencing the text and button views
-        messageView = (TextView) findViewById(R.id.textView);
+        messageView = (TextView) findViewById(R.id.headtext);
         btnGreek = findViewById(R.id.btnGreek);
         btnEnglish = findViewById(R.id.btnEnglish);
 
@@ -36,7 +35,11 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 context = LocaleHelper.setLocale(MainActivity.this, "en");
                 resources = context.getResources();
-                messageView.setText(resources.getString(R.string.language));
+
+                messageView.setText(resources.getString(R.string.header));
+
+
+                startActivity(new Intent(MainActivity.this, User_proficiency.class));
             }
         });
 
@@ -45,7 +48,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 context = LocaleHelper.setLocale(MainActivity.this, "el");
                 resources = context.getResources();
-                messageView.setText(resources.getString(R.string.language));
+
+                startActivity(new Intent(MainActivity.this, User_proficiency.class));
             }
         });
 

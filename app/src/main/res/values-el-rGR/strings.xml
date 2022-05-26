@@ -3,5 +3,8 @@
 <resources>
     <string name="app_name">GAC_Interface</string>
     <string name="selected_language">Ελληνικα</string>
-    <string name="language">Κλιματιστικό</string>
+    <string name="header">Κλιματιστικό</string>
+    <string name="experienced">Έμπειρος Χρήστης</string>
+    <string name="novice">Αρχάριος Χρήστης</string>
+    <string name="back">Πίσω</string>
 </resources>

@@ -7,10 +7,10 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/headtext"
         android:layout_width="335dp"
         android:layout_height="50dp"
-        android:text="Κλιματιστικό"
+        android:text="@string/header"
         android:textAlignment="center"
         android:textColor="#171616"
         android:textSize="34sp"
