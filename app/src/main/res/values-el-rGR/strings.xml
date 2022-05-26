@@ -7,4 +7,6 @@
     <string name="experienced">Έμπειρος Χρήστης</string>
     <string name="novice">Αρχάριος Χρήστης</string>
     <string name="back">Πίσω</string>
+    <string name="activate">Ενεργοποίηση</string>
+
 </resources>

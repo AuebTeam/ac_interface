@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AC_Interface"
         tools:targetApi="31">
-        <activity android:name=".User_proficiency"></activity>
+        <activity android:name=".Novice"></activity>
+        <activity android:name=".User_proficiency" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
