@@ -47,7 +47,7 @@ public class User_proficiency extends AppCompatActivity {
         experience.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //startActivity(new Intent(MainActivity.this, User_proficiency.class));
+                startActivity(new Intent(User_proficiency.this, Experienced.class));
             }
         });
 

@@ -6,4 +6,22 @@
     <string name="novice">Novice User</string>
     <string name="back">Back</string>
     <string name="activate">Activate</string>
+    <string name="hot">Hot</string>
+    <string name="cold">Cold</string>
+    <string name="turn_on">Turn On</string>
+    <string name="turn_off">Turn Off</string>
+    <string name="turn_on_timer">TURN ON IN</string>
+    <string name="turn_off_timer">TURN OFF IN</string>
+    <string name="no_timer">NO TIMER</string>
+    <string name="timer_message">Type number of minutes</string>
+    <string name="louver">Louver Modification</string>
+    <string name="mode">Mode</string>
+    <string name="fan_mode">Fan Mode</string>
+    <string name="dry_mode">Dry Mode</string>
+    <string name="air_flow">Air Flow</string>
+    <string name="humidity">Humidity %</string>
+    <string name="choose_timer">Timer</string>
+
+
+
 </resources>

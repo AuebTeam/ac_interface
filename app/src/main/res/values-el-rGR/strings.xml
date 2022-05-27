@@ -8,5 +8,21 @@
     <string name="novice">Αρχάριος Χρήστης</string>
     <string name="back">Πίσω</string>
     <string name="activate">Ενεργοποίηση</string>
+    <string name="hot">Ζέστη</string>
+    <string name="cold">Κρύο</string>
+    <string name="turn_on">Ενεργοποίηση</string>
+    <string name="turn_off">Απενεργοποίηση</string>
+    <string name="turn_on_timer">ΕΝΕΡΓΟΠΟΙΗΣΗ ΣΕ</string>
+    <string name="turn_off_timer">ΑΠΕΝΕΡΓΟΠΟΙΗΣΗ ΣΕ</string>
+    <string name="no_timer">ΧΩΡΙΣ ΧΡΟΝΟΜΕΤΡΟ</string>
+    <string name="timer_message">Γράψτε Αριθμό Λεπτών</string>
+    <string name="louver">Ρύθμιση Περσίδων</string>
+    <string name="mode">Λειτουργία</string>
+    <string name="fan_mode">Λειτουργία Ανεμιστήρα</string>
+    <string name="dry_mode">Λειτουργία Αφύγρανσης</string>
+    <string name="air_flow">Ένταση Αέρα</string>
+    <string name="humidity">Υγρασία %</string>
+    <string name="choose_timer">Επιλογή Χρονομέτρου</string>
+
 
 </resources>
