@@ -13,7 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AC_Interface"
         tools:targetApi="31">
-        <activity android:name=".Experienced"></activity>
+        <activity
+            android:name=".Hc_interface"
+            android:exported="false" />
+        <activity android:name=".Experienced" />
         <activity android:name=".Novice" />
         <activity android:name=".User_proficiency" />
         <activity

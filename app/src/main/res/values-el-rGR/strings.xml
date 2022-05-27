@@ -27,4 +27,11 @@
     <string name="ok">OK</string>
     <string name="help_title">Συμβουλή!</string>
     <string name="help_usprof">Επιλέξτε αρχάριος εάν δεν θέλετε να έχετε προχωρημένες δυνατότητες ή εάν είστε ενήλικας, αλλιως επιλεξτε εμπειρος</string>
+    <string name="temperature">Θερμοκρασία</string>
+    <string name="low">Χαμηλα</string>
+    <string name="medium">Μέση</string>
+    <string name="high">Ψηλά</string>
+    <string name="air_low">Χαμηλή</string>
+    <string name="air_medium">Μέτρια</string>
+    <string name="air_high">Δυνατή</string>
 </resources>

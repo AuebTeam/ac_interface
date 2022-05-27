@@ -118,7 +118,7 @@ public class Experienced extends AppCompatActivity {
                     minutes = Integer.parseInt(temp);
                 }
                 System.out.println(timer_mode + " : " + minutes);
-
+                startActivity(new Intent(Experienced.this, Hc_interface.class));
             }
         });
 

@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Aueb/HumanComputerInteraction/project/app/src/main/res/layout/activity_experienced.xml" value="0.3640625" />
+        <entry key="..\:/Aueb/HumanComputerInteraction/project/app/src/main/res/layout/activity_hc_interface.xml" value="0.1770516717325228" />
         <entry key="..\:/Aueb/HumanComputerInteraction/project/app/src/main/res/layout/activity_main.xml" value="0.3596014492753623" />
+        <entry key="..\:/Aueb/HumanComputerInteraction/project/app/src/main/res/layout/activity_novice.xml" value="0.1770516717325228" />
         <entry key="..\:/Aueb/HumanComputerInteraction/project/app/src/main/res/layout/popup.xml" value="0.1770516717325228" />
       </map>
     </option>

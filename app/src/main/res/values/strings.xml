@@ -25,4 +25,11 @@
     <string name="ok">OK</string>
     <string name="help_title">Tip!</string>
     <string name="help_usprof">Choose novice if you do not want advanced features or if you are elder. Otherwise, choose experienced </string>
+    <string name="temperature">Temperature</string>
+    <string name="low">Low</string>
+    <string name="medium">Medium</string>
+    <string name="high">High</string>
+    <string name="air_low">Low</string>
+    <string name="air_medium">Medium</string>
+    <string name="air_high">High</string>
 </resources>
