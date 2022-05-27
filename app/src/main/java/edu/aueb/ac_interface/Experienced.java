@@ -55,7 +55,7 @@ public class Experienced extends AppCompatActivity {
         resources = context.getResources();
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        mode = resources.getString(R.string.hot);
+        mode = resources.getString(R.string.heat_cold_mode);
         spinner = findViewById(R.id.spinner);
         header = (TextView) findViewById(R.id.headtext);
         timer_header = (TextView) findViewById((R.id.timerview));
@@ -88,8 +88,10 @@ public class Experienced extends AppCompatActivity {
         minutes = 0;
 
         ArrayList<String> arrayList = new ArrayList<>();
-        arrayList.add(resources.getString(R.string.hot));
-        arrayList.add(resources.getString(R.string.cold));
+        arrayList.add(resources.getString(R.string.heat_cold_mode));
+        arrayList.add(resources.getString(R.string.fan_mode));
+        arrayList.add(resources.getString(R.string.dry_mode));
+
 
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_item, arrayList);
@@ -118,7 +120,16 @@ public class Experienced extends AppCompatActivity {
                     minutes = Integer.parseInt(temp);
                 }
                 System.out.println(timer_mode + " : " + minutes);
-                startActivity(new Intent(Experienced.this, Hc_interface.class));
+                if(mode.equals(resources.getString(R.string.heat_cold_mode))) {
+                    startActivity(new Intent(Experienced.this, Hc_interface.class));
+                }
+                else if(mode.equals(resources.getString(R.string.fan_mode)))
+                {
+                    startActivity(new Intent(Experienced.this, Fan_mode.class));
+                }
+                else{
+                    startActivity(new Intent(Experienced.this, Dry_mode.class));
+                }
             }
         });
 
@@ -133,7 +144,7 @@ public class Experienced extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 builder.setTitle(resources.getString(R.string.help_title));
-                builder.setMessage(resources.getString(R.string.help));
+                builder.setMessage(resources.getString(R.string.help_experienced));
                 builder.setPositiveButton(resources.getString(R.string.ok), null);
                 builder.show();
             }

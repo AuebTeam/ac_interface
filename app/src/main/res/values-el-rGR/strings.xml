@@ -18,6 +18,7 @@
     <string name="timer_message">Γράψτε Αριθμό Λεπτών</string>
     <string name="louver">Ρύθμιση Περσίδων</string>
     <string name="mode">Λειτουργία</string>
+    <string name="heat_cold_mode">Λειτουργία Ζέστης Κρύου</string>
     <string name="fan_mode">Λειτουργία Ανεμιστήρα</string>
     <string name="dry_mode">Λειτουργία Αφύγρανσης</string>
     <string name="air_flow">Ένταση Αέρα</string>
@@ -27,6 +28,9 @@
     <string name="ok">OK</string>
     <string name="help_title">Συμβουλή!</string>
     <string name="help_usprof">Επιλέξτε αρχάριος εάν δεν θέλετε να έχετε προχωρημένες δυνατότητες ή εάν είστε ενήλικας, αλλιως επιλεξτε εμπειρος</string>
+    <string name="help_fanmode"> Παρακαλώ χρησιμοποιήστε το μενού για να ρυθμίσετε την ένταση του αέρα και τις περσίδες</string>
+    <string name="help_drymode"> Εδώ βλέπετε το επίπεδο υγρασίας του δωματίου</string>
+    <string name="help_experienced"> Παρακαλώ χρησιμοποιήστε το μενού για να διαλέξετε την λειτουργία που θέλετε. Επίσης χρησιμοποιήστε τα κουμπιά για να βάλετε το χρονόμετρο που θέλετε</string>
     <string name="temperature">Θερμοκρασία</string>
     <string name="low">Χαμηλα</string>
     <string name="medium">Μέση</string>

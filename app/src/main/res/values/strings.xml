@@ -16,6 +16,7 @@
     <string name="timer_message">Type number of minutes</string>
     <string name="louver">Louver Modification</string>
     <string name="mode">Mode</string>
+    <string name="heat_cold_mode">Heat Cold Mode</string>
     <string name="fan_mode">Fan Mode</string>
     <string name="dry_mode">Dry Mode</string>
     <string name="air_flow">Air Flow</string>
@@ -25,6 +26,9 @@
     <string name="ok">OK</string>
     <string name="help_title">Tip!</string>
     <string name="help_usprof">Choose novice if you do not want advanced features or if you are elder. Otherwise, choose experienced </string>
+    <string name="help_fanmode"> Please use the drop down menu to adjust the air flow and the louver</string>
+    <string name="help_drymode"> Here you can see the humidity level of the room</string>
+    <string name="help_experienced"> Please use the drop down menu to choose the mode that you would like to use. Also press the appropriate buttons in order to use the timer</string>
     <string name="temperature">Temperature</string>
     <string name="low">Low</string>
     <string name="medium">Medium</string>
