@@ -27,8 +27,6 @@ import java.util.ArrayList;
 public class Novice extends AppCompatActivity {
 
     String mode;
-    Dialog mDialog;
-
     Spinner spinner;
     Button plus1,minus1,activate,back;
     TextView temperature,header;
@@ -49,7 +47,6 @@ public class Novice extends AppCompatActivity {
         context = LocaleHelper.setLocale(Novice.this);
         resources = context.getResources();
 
-        mDialog = new Dialog(Novice.this);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         mode = resources.getString(R.string.hot);
         spinner = findViewById(R.id.spinner);

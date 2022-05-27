@@ -23,5 +23,6 @@
     <string name="choose_timer">Timer</string>
     <string name="help">Please choose the mode from the drop-down menu and adjust the temperature using the buttons</string>
     <string name="ok">OK</string>
-    <string name="help_title">Help</string>
+    <string name="help_title">Tip!</string>
+    <string name="help_usprof">Choose novice if you do not want advanced features or if you are elder. Otherwise, choose experienced </string>
 </resources>

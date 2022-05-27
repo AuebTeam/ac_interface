@@ -25,5 +25,6 @@
     <string name="choose_timer">Επιλογή Χρονομέτρου</string>
     <string name="help">Παρακαλώ επιλέξτε την λειτουργία από το αναπτυσσόμενο μενού και ρυθμίστε την θερμοκρασία χρησιμοποιώντας τα πλήκτρα</string>
     <string name="ok">OK</string>
-    <string name="help_title">Βοήθεια</string>
+    <string name="help_title">Συμβουλή!</string>
+    <string name="help_usprof">Επιλέξτε αρχάριος εάν δεν θέλετε να έχετε προχωρημένες δυνατότητες ή εάν είστε ενήλικας, αλλιως επιλεξτε εμπειρος</string>
 </resources>

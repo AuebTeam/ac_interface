@@ -1,5 +1,6 @@
 package edu.aueb.ac_interface;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
@@ -18,7 +19,7 @@ public class User_proficiency extends AppCompatActivity {
 
     Button experience,novice,back;
     FloatingActionButton help;
-
+    AlertDialog.Builder builder;
     Context context;
     Resources resources;
 
@@ -31,13 +32,13 @@ public class User_proficiency extends AppCompatActivity {
         context = LocaleHelper.setLocale(User_proficiency.this);
         resources = context.getResources();
 
-
+        builder = new AlertDialog.Builder(this);
         messageView = (TextView) findViewById(R.id.headtext);
         experience = findViewById(R.id.experienced);
         novice = findViewById(R.id.novice);
         back = findViewById(R.id.back_1);
 
-
+        help = findViewById(R.id.user_proficiency_help_button);
         experience.setText(resources.getString(R.string.experienced));
         novice.setText(resources.getString(R.string.novice));
         back.setText(resources.getString(R.string.back));
@@ -65,8 +66,14 @@ public class User_proficiency extends AppCompatActivity {
             }
         });
 
-
+        help.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                builder.setTitle(resources.getString(R.string.help_title));
+                builder.setMessage(resources.getString(R.string.help_usprof));
+                builder.setPositiveButton(resources.getString(R.string.ok), null);
+                builder.show();
+            }
+        });
     }
-
-
 }
