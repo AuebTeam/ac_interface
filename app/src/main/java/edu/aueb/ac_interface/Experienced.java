@@ -2,6 +2,7 @@ package edu.aueb.ac_interface;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -53,6 +54,7 @@ public class Experienced extends AppCompatActivity {
         context = LocaleHelper.setLocale(Experienced.this);
         resources = context.getResources();
 
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
         mode = resources.getString(R.string.hot);
         spinner = findViewById(R.id.spinner);
         header = (TextView) findViewById(R.id.headtext);
@@ -127,7 +129,15 @@ public class Experienced extends AppCompatActivity {
             }
         });
 
-
+        help.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                builder.setTitle(resources.getString(R.string.help_title));
+                builder.setMessage(resources.getString(R.string.help));
+                builder.setPositiveButton(resources.getString(R.string.ok), null);
+                builder.show();
+            }
+        });
 
 
 

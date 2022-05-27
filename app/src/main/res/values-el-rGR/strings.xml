@@ -23,6 +23,7 @@
     <string name="air_flow">Ένταση Αέρα</string>
     <string name="humidity">Υγρασία %</string>
     <string name="choose_timer">Επιλογή Χρονομέτρου</string>
-
-
+    <string name="help">Παρακαλώ επιλέξτε την λειτουργία από το αναπτυσσόμενο μενού και ρυθμίστε την θερμοκρασία χρησιμοποιώντας τα πλήκτρα</string>
+    <string name="ok">OK</string>
+    <string name="help_title">Βοήθεια</string>
 </resources>

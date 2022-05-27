@@ -21,7 +21,7 @@
     <string name="air_flow">Air Flow</string>
     <string name="humidity">Humidity %</string>
     <string name="choose_timer">Timer</string>
-
-
-
+    <string name="help">Please choose the mode from the drop-down menu and adjust the temperature using the buttons</string>
+    <string name="ok">OK</string>
+    <string name="help_title">Help</string>
 </resources>
