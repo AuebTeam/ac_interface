@@ -21,7 +21,7 @@ import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.ArrayList;
 
-public class Experienced extends AppCompatActivity {
+public class Average extends AppCompatActivity {
 
 
     FloatingActionButton help;
@@ -29,9 +29,7 @@ public class Experienced extends AppCompatActivity {
     Context context;
     Resources resources;
 
-    Button back,activate;
-
-    RadioButton turn_on,turn_off,no_timer,radioButton;
+    Button back,activate,timer_settings;
 
     TextView header,timer_header,mode_header;
 
@@ -39,9 +37,6 @@ public class Experienced extends AppCompatActivity {
 
     String mode,timer_mode;
 
-    TextInputEditText timer_text;
-
-    RadioGroup radio_group;
 
     int minutes;
 
@@ -49,9 +44,9 @@ public class Experienced extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_experienced);
+        setContentView(R.layout.activity_average);
 
-        context = LocaleHelper.setLocale(Experienced.this);
+        context = LocaleHelper.setLocale(Average.this);
         resources = context.getResources();
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -61,27 +56,21 @@ public class Experienced extends AppCompatActivity {
         timer_header = (TextView) findViewById((R.id.timerview));
         mode_header = (TextView) findViewById((R.id.modeview));
 
+        timer_settings = findViewById(R.id.timer_settings_button);
         back = findViewById(R.id.back_3);
         activate = findViewById(R.id.turn_on);
 
         help = findViewById(R.id.experienced_help_button);
 
-        turn_on = findViewById(R.id.turn_on_timer);
-        turn_off = findViewById(R.id.turn_off_timer);
-        no_timer = findViewById(R.id.no_timer);
-        radio_group = findViewById(R.id.radio_group);
 
-        timer_text = (TextInputEditText) findViewById(R.id.timer_text);
 
+        timer_settings.setText(resources.getString(R.string.timer_settings));
         activate.setText(resources.getString(R.string.activate));
         back.setText(resources.getString(R.string.back));
         header.setText(resources.getString(R.string.header));
         timer_header.setText(resources.getString(R.string.choose_timer));
         mode_header.setText(resources.getString(R.string.mode));
-        turn_on.setText(resources.getString(R.string.turn_on_timer));
-        turn_off.setText(resources.getString(R.string.turn_off_timer));
-        no_timer.setText(resources.getString(R.string.no_timer));
-        timer_text.setText(resources.getString(R.string.timer_message));
+
 
 
         timer_mode = "No Timer";
@@ -112,31 +101,32 @@ public class Experienced extends AppCompatActivity {
         activate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                String temp = timer_text.getText().toString();
-                if(!temp.equals("Type number of minutes") && !temp.equals("Γράψτε Αριθμό Λεπτών")) {
-                    temp = temp.replace(" ","");
-                    temp = temp.replace("\n","");
-                    minutes = Integer.parseInt(temp);
-                }
                 System.out.println(timer_mode + " : " + minutes);
                 if(mode.equals(resources.getString(R.string.heat_cold_mode))) {
-                    startActivity(new Intent(Experienced.this, Hc_interface.class));
+                    startActivity(new Intent(Average.this, Hc_interface.class));
                 }
                 else if(mode.equals(resources.getString(R.string.fan_mode)))
                 {
-                    startActivity(new Intent(Experienced.this, Fan_mode.class));
+                    startActivity(new Intent(Average.this, Fan_mode.class));
                 }
                 else{
-                    startActivity(new Intent(Experienced.this, Dry_mode.class));
+                    startActivity(new Intent(Average.this, Dry_mode.class));
                 }
+            }
+        });
+
+
+        timer_settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Average.this, Timer.class));
             }
         });
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Experienced.this, User_proficiency.class));
+                startActivity(new Intent(Average.this, User_proficiency.class));
             }
         });
 
@@ -152,21 +142,5 @@ public class Experienced extends AppCompatActivity {
 
 
 
-    }
-
-    public void checkButton(View view){
-        int radioId = radio_group.getCheckedRadioButtonId();
-
-        radioButton = findViewById(radioId);
-
-        if(radioButton.equals(turn_on)){
-            timer_mode = "Timer On";
-        }
-        else if(radioButton.equals(turn_off)){
-            timer_mode = "Timer Off";
-        }
-        else{
-            timer_mode = "No Timer";
-        }
     }
 }

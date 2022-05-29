@@ -49,7 +49,7 @@ public class Hc_interface extends AppCompatActivity {
         spinner_mode = findViewById(R.id.spinner_mode_hc);
         spinner_louver = findViewById(R.id.spinner_louver_hc);
         help = findViewById(R.id.help_hc);
-        temperature_text = findViewById(R.id.temperature_hc_text);
+        temperature_text = findViewById(R.id.header);
 
         header.setText(resources.getString(R.string.header));
         mode.setText(resources.getString(R.string.mode));
@@ -116,7 +116,7 @@ public class Hc_interface extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Hc_interface.this, Experienced.class));
+                startActivity(new Intent(Hc_interface.this, Average.class));
             }
         });
 

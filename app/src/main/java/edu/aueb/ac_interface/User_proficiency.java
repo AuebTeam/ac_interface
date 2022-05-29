@@ -17,7 +17,7 @@ public class User_proficiency extends AppCompatActivity {
 
     TextView messageView;
 
-    Button experience,novice,back;
+    Button average,elder,back;
     FloatingActionButton help;
     AlertDialog.Builder builder;
     Context context;
@@ -34,28 +34,28 @@ public class User_proficiency extends AppCompatActivity {
 
         builder = new AlertDialog.Builder(this);
         messageView = (TextView) findViewById(R.id.headtext);
-        experience = findViewById(R.id.experienced);
-        novice = findViewById(R.id.novice);
+        average = findViewById(R.id.experienced);
+        elder = findViewById(R.id.novice);
         back = findViewById(R.id.back_1);
 
         help = findViewById(R.id.user_proficiency_help_button);
-        experience.setText(resources.getString(R.string.experienced));
-        novice.setText(resources.getString(R.string.novice));
+        average.setText(resources.getString(R.string.average));
+        elder.setText(resources.getString(R.string.elder));
         back.setText(resources.getString(R.string.back));
 
         messageView.setText(resources.getString(R.string.header));
 
-        experience.setOnClickListener(new View.OnClickListener() {
+        average.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(User_proficiency.this, Experienced.class));
+                startActivity(new Intent(User_proficiency.this, Average.class));
             }
         });
 
-        novice.setOnClickListener(new View.OnClickListener() {
+        elder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(User_proficiency.this, Novice.class));
+                startActivity(new Intent(User_proficiency.this, Elder.class));
             }
         });
 

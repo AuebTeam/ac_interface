@@ -2,16 +2,16 @@
     <string name="app_name">AC_Interface</string>
     <string name="selected_language">English</string>
     <string name="header">Air Condition</string>
-    <string name="experienced">Experienced User</string>
-    <string name="novice">Novice User</string>
+    <string name="average">Average User</string>
+    <string name="elder">Elderly User</string>
     <string name="back">Back</string>
     <string name="activate">Activate</string>
     <string name="hot">Hot</string>
     <string name="cold">Cold</string>
     <string name="turn_on">Turn On</string>
     <string name="turn_off">Turn Off</string>
-    <string name="turn_on_timer">TURN ON IN</string>
-    <string name="turn_off_timer">TURN OFF IN</string>
+    <string name="turn_on_timer">TURN ON TIMER IN </string>
+    <string name="turn_off_timer">TURN OFF TIMER IN</string>
     <string name="no_timer">NO TIMER</string>
     <string name="timer_message">Type number of minutes</string>
     <string name="louver">Louver Modification</string>
@@ -25,10 +25,10 @@
     <string name="help">Please choose the mode from the drop-down menu and adjust the temperature using the buttons</string>
     <string name="ok">OK</string>
     <string name="help_title">Tip!</string>
-    <string name="help_usprof">Choose novice if you do not want advanced features or if you are elder. Otherwise, choose experienced </string>
+    <string name="help_usprof">If you are an elderly user, please choose the elder option that has only the very basic function of heating and warming the room. Otherwise please select the average user that contains more advanced features. </string>
     <string name="help_fanmode"> Please use the drop down menu to adjust the air flow and the louver</string>
     <string name="help_drymode"> Here you can see the humidity level of the room</string>
-    <string name="help_experienced"> Please use the drop down menu to choose the mode that you would like to use. Also press the appropriate buttons in order to use the timer</string>
+    <string name="help_experienced"> Please use the drop down menu to choose the mode that you would like to use. If you want to activate the timer, please press the Timer Settings button to be redirected to its menu</string>
     <string name="temperature">Temperature</string>
     <string name="low">Low</string>
     <string name="medium">Medium</string>
@@ -36,4 +36,7 @@
     <string name="air_low">Low</string>
     <string name="air_medium">Medium</string>
     <string name="air_high">High</string>
+    <string name="set_timer">ΟΚ</string>
+    <string name="timer_settings">Timer Settings</string>
+    <string name="help_timer">Please choose which functions you want to use. If you want to open the air condition in "X" minutes please check the "Turn on timer in" and type on the box beneath it the minutes. If you want to close the air conditon in "X" minutes please select "Turn off timer in" and write the minutes. If you do not want any of this check the "No Timer" button.</string>
 </resources>

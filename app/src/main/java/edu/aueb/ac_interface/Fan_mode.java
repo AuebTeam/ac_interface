@@ -20,7 +20,7 @@ import java.util.ArrayList;
 
 public class Fan_mode extends AppCompatActivity {
 
-    TextView header,louver_text,air_flow_text;
+    TextView header,louver_text,air_flow_text,fan_mode_text;
 
     Button btnBack, btnTurnoff;
 
@@ -47,6 +47,7 @@ public class Fan_mode extends AppCompatActivity {
         header = findViewById(R.id.headtext);
         louver_text = findViewById(R.id.louver_text);
         air_flow_text = findViewById(R.id.air_flow_text);
+        fan_mode_text = findViewById(R.id.fan_mode_text);
 
         btnBack = findViewById(R.id.back_fan);
         btnTurnoff = findViewById(R.id.turn_off_fan);
@@ -59,6 +60,7 @@ public class Fan_mode extends AppCompatActivity {
         header.setText(resources.getString(R.string.header));
         louver_text.setText(resources.getString(R.string.louver));
         air_flow_text.setText(resources.getString(R.string.air_flow));
+        fan_mode_text.setText(resources.getString(R.string.fan_mode));
 
         btnBack.setText(resources.getString(R.string.back));
         btnTurnoff.setText(resources.getString(R.string.turn_off));
@@ -120,7 +122,7 @@ public class Fan_mode extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Fan_mode.this, Experienced.class));
+                startActivity(new Intent(Fan_mode.this, Average.class));
             }
         });
 

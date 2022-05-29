@@ -4,8 +4,8 @@
     <string name="app_name">GAC_Interface</string>
     <string name="selected_language">Ελληνικα</string>
     <string name="header">Κλιματιστικό</string>
-    <string name="experienced">Έμπειρος Χρήστης</string>
-    <string name="novice">Αρχάριος Χρήστης</string>
+    <string name="average">Μέσος Χρήστης</string>
+    <string name="elder">Ηλικιωμένος Χρήστης</string>
     <string name="back">Πίσω</string>
     <string name="activate">Ενεργοποίηση</string>
     <string name="hot">Ζέστη</string>
@@ -27,10 +27,10 @@
     <string name="help">Παρακαλώ επιλέξτε την λειτουργία από το αναπτυσσόμενο μενού και ρυθμίστε την θερμοκρασία χρησιμοποιώντας τα πλήκτρα</string>
     <string name="ok">OK</string>
     <string name="help_title">Συμβουλή!</string>
-    <string name="help_usprof">Επιλέξτε αρχάριος εάν δεν θέλετε να έχετε προχωρημένες δυνατότητες ή εάν είστε ενήλικας, αλλιως επιλεξτε εμπειρος</string>
+    <string name="help_usprof"> Αν είστε ηλικιωμένος χρήστης παρακαλώ επιλέξτε την επιλογή για ηλικιωμένους που περιέχει μόνο την βασική λειτουργία θέρμανσης και ψύξης. Σε οποιαδήποτε άλλη περίπτωση διαλέξτε την λειτουργία μέσου χρήστη που έχει πιο πολλές λειτουργίες.</string>
     <string name="help_fanmode"> Παρακαλώ χρησιμοποιήστε το μενού για να ρυθμίσετε την ένταση του αέρα και τις περσίδες</string>
     <string name="help_drymode"> Εδώ βλέπετε το επίπεδο υγρασίας του δωματίου</string>
-    <string name="help_experienced"> Παρακαλώ χρησιμοποιήστε το μενού για να διαλέξετε την λειτουργία που θέλετε. Επίσης χρησιμοποιήστε τα κουμπιά για να βάλετε το χρονόμετρο που θέλετε</string>
+    <string name="help_experienced"> Παρακαλώ χρησιμοποιήστε το μενού για να διαλέξετε την λειτουργία που θέλετε. Αν θέλετε να χρησιμοποιήσετε την λειτουργία Χρονομέτρου, παρακαλώ πατήστε το κουμπί που λέει ρυθμίσεις Χρονομέτρου για να βάλετε την ρύθμιση που θέλετε.</string>
     <string name="temperature">Θερμοκρασία</string>
     <string name="low">Χαμηλα</string>
     <string name="medium">Μέση</string>
@@ -38,4 +38,8 @@
     <string name="air_low">Χαμηλή</string>
     <string name="air_medium">Μέτρια</string>
     <string name="air_high">Δυνατή</string>
+    <string name="set_timer">ΟΚ</string>
+    <string name="timer_settings">Ρυθμίσεις Χρονομέτρου</string>
+    <string name="help_timer">Αν θέλετε να ενεργοποιήσετε το κλιματιστικό σε "Χ" λεπτά επιλέξτε την λειτουργία "Ενεργοποίηση σε" και γράψτε από κάτω τα λεπτά που θέλετε. Αν θέλετε να απενεργοιποιήσετε το κλιματιστικό σε "Χ" λεπτά επιλέξτε "Απενεργοποίηση σε" και γράψτε τα λεπτά που θέλετε. Αν δεν θέλετε χρονόμετρο επιλέξτε την τρίτη λειτουργία.</string>
+
 </resources>

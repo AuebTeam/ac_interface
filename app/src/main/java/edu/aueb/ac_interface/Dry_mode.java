@@ -64,7 +64,7 @@ public class Dry_mode extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Dry_mode.this, Experienced.class));
+                startActivity(new Intent(Dry_mode.this, Average.class));
             }
         });
 

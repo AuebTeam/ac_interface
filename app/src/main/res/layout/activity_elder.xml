@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Novice">
+    tools:context=".Elder">
 
 
     <Button
         android:id="@+id/minus_one"
         android:layout_width="80dp"
         android:layout_height="80dp"
+        android:backgroundTint="#00CCFF"
         android:text="-1"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -68,6 +69,7 @@
         android:id="@+id/plus_one"
         android:layout_width="80dp"
         android:layout_height="80dp"
+        android:backgroundTint="#FF0000"
         android:text="+1"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -81,6 +83,7 @@
         android:id="@+id/activate_1"
         android:layout_width="200dp"
         android:layout_height="80dp"
+        android:backgroundTint="#0C6E13"
         android:text="@string/activate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -99,7 +102,8 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.949" />
+        app:layout_constraintVertical_bias="0.949"
+        android:backgroundTint="#2C63C1"/>
 
     <Spinner
         android:id="@+id/spinner"

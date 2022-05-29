@@ -3,20 +3,14 @@ package edu.aueb.ac_interface;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.view.Gravity;
-import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.PopupWindow;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -24,7 +18,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
-public class Novice extends AppCompatActivity {
+public class Elder extends AppCompatActivity {
 
     String mode;
     Spinner spinner;
@@ -41,10 +35,10 @@ public class Novice extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_novice);
+        setContentView(R.layout.activity_elder);
 
 
-        context = LocaleHelper.setLocale(Novice.this);
+        context = LocaleHelper.setLocale(Elder.this);
         resources = context.getResources();
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -92,7 +86,7 @@ public class Novice extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Novice.this, User_proficiency.class));
+                startActivity(new Intent(Elder.this, User_proficiency.class));
             }
         });
 

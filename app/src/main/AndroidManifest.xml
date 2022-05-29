@@ -13,13 +13,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AC_Interface"
         tools:targetApi="31">
-        <activity android:name=".Dry_mode"></activity>
+        <activity android:name=".Timer"></activity>
+        <activity android:name=".Dry_mode" />
         <activity android:name=".Fan_mode" />
         <activity
             android:name=".Hc_interface"
             android:exported="false" />
-        <activity android:name=".Experienced" />
-        <activity android:name=".Novice" />
+        <activity android:name=".Average" />
+        <activity android:name=".Elder" />
         <activity android:name=".User_proficiency" />
         <activity
             android:name=".MainActivity"

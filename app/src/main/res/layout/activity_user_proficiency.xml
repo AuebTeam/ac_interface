@@ -24,7 +24,8 @@
         android:id="@+id/experienced"
         android:layout_width="200dp"
         android:layout_height="80dp"
-        android:text="@string/experienced"
+        android:backgroundTint="#673AB7"
+        android:text="@string/average"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -36,7 +37,8 @@
         android:id="@+id/novice"
         android:layout_width="200dp"
         android:layout_height="80dp"
-        android:text="@string/novice"
+        android:backgroundTint="#FF5722"
+        android:text="@string/elder"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -48,13 +50,17 @@
         android:id="@+id/back_1"
         android:layout_width="120dp"
         android:layout_height="60dp"
+        android:autoLink="all"
         android:text="@string/back"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.938" />
+        app:layout_constraintVertical_bias="0.938"
+        android:backgroundTint="#2C63C1"
+        />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/user_proficiency_help_button"

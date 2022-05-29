@@ -90,8 +90,9 @@
 
     <Button
         android:id="@+id/turn_off_fan"
-        android:layout_width="110dp"
-        android:layout_height="50dp"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#8F0A0A"
         android:text="@string/turn_off"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -103,7 +104,8 @@
     <Button
         android:id="@+id/back_fan"
         android:layout_width="110dp"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#2C63C1"
         android:text="@string/back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
