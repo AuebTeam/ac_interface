@@ -39,4 +39,5 @@
     <string name="set_timer">ΟΚ</string>
     <string name="timer_settings">Timer Settings</string>
     <string name="help_timer">Please choose which functions you want to use. If you want to open the air condition in "X" minutes please check the "Turn on timer in" and type on the box beneath it the minutes. If you want to close the air conditon in "X" minutes please select "Turn off timer in" and write the minutes. If you do not want any of this check the "No Timer" button.</string>
+    <string name="cbutton">Continue</string>
 </resources>

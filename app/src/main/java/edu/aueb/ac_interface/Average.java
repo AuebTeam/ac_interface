@@ -65,7 +65,7 @@ public class Average extends AppCompatActivity {
 
 
         timer_settings.setText(resources.getString(R.string.timer_settings));
-        activate.setText(resources.getString(R.string.activate));
+        activate.setText(resources.getString(R.string.cbutton));
         back.setText(resources.getString(R.string.back));
         header.setText(resources.getString(R.string.header));
         timer_header.setText(resources.getString(R.string.choose_timer));

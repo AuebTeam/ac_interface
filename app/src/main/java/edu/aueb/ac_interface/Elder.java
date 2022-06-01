@@ -80,6 +80,13 @@ public class Elder extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 System.out.println("AC activated in novice mode");
+                activate.setSelected(!activate.isSelected());
+                final int mode_int = (activate.isSelected())?1:0;
+                if (mode_int == 1) {
+                    activate.setText(resources.getString(R.string.turn_off));
+                } else {
+                    activate.setText(resources.getString(R.string.activate));
+                }
             }
         });
 

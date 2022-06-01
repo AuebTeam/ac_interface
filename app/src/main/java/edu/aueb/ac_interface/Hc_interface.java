@@ -30,6 +30,7 @@ public class Hc_interface extends AppCompatActivity {
     Resources resources;
     String mode_string, louver_string;
     int wanted_temperature = 20;
+    static int button_mode;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -109,7 +110,14 @@ public class Hc_interface extends AppCompatActivity {
         btnTurnoff.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                System.out.println("AC activated in novice mode");
+                btnTurnoff.setSelected(!btnTurnoff.isSelected());
+                button_mode = (btnTurnoff.isSelected())?1:0;
+                if (button_mode == 1) {
+                    btnTurnoff.setText(resources.getString(R.string.activate));
+                } else {
+                    btnTurnoff.setText(resources.getString(R.string.turn_off));
+                }
             }
         });
 

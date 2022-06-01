@@ -115,7 +115,14 @@ public class Fan_mode extends AppCompatActivity {
         btnTurnoff.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                System.out.println("AC activated in novice mode");
+                btnTurnoff.setSelected(!btnTurnoff.isSelected());
+                final int mode_int = (btnTurnoff.isSelected())?1:0;
+                if (mode_int == 1) {
+                    btnTurnoff.setText(resources.getString(R.string.activate));
+                } else {
+                    btnTurnoff.setText(resources.getString(R.string.turn_off));
+                }
             }
         });
 

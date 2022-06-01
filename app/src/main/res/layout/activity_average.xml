@@ -39,7 +39,7 @@
         android:layout_width="170dp"
         android:layout_height="60dp"
         android:backgroundTint="#0C6E13"
-        android:text="@string/activate"
+        android:text="@string/cbutton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.918"
