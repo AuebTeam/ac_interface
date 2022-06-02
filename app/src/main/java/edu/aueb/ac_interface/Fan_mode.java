@@ -64,7 +64,7 @@ public class Fan_mode extends AppCompatActivity {
         fan_mode_text.setText(resources.getString(R.string.fan_mode));
 
         btnBack.setText(resources.getString(R.string.back));
-        btnTurnoff.setText(resources.getString(R.string.turn_off));
+        btnTurnoff.setText(resources.getString(R.string.activate));
 
         air_flow_string = resources.getString(R.string.air_medium);
 
