@@ -13,6 +13,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -84,8 +85,10 @@ public class Elder extends AppCompatActivity {
                 final int mode_int = (activate.isSelected())?1:0;
                 if (mode_int == 1) {
                     activate.setText(resources.getString(R.string.turn_off));
+                    Toast.makeText(context,R.string.toast_act, Toast.LENGTH_SHORT).show();
                 } else {
                     activate.setText(resources.getString(R.string.activate));
+                    Toast.makeText(context,R.string.toast_deact, Toast.LENGTH_SHORT).show();
                 }
             }
         });

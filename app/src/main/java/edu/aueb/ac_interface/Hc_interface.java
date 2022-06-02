@@ -14,6 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -58,7 +59,7 @@ public class Hc_interface extends AppCompatActivity {
         temperature_text.setText(resources.getString(R.string.temperature));
 
         btnBack.setText(resources.getString(R.string.back));
-        btnTurnoff.setText(resources.getString(R.string.turn_off));
+        btnTurnoff.setText(resources.getString(R.string.turn_on));
         minus_1.setText("-1");
         plus_1.setText("+1");
 
@@ -114,9 +115,11 @@ public class Hc_interface extends AppCompatActivity {
                 btnTurnoff.setSelected(!btnTurnoff.isSelected());
                 button_mode = (btnTurnoff.isSelected())?1:0;
                 if (button_mode == 1) {
-                    btnTurnoff.setText(resources.getString(R.string.activate));
-                } else {
                     btnTurnoff.setText(resources.getString(R.string.turn_off));
+                    Toast.makeText(context,R.string.toast_act, Toast.LENGTH_SHORT).show();
+                } else {
+                    btnTurnoff.setText(resources.getString(R.string.activate));
+                    Toast.makeText(context,R.string.toast_deact, Toast.LENGTH_SHORT).show();
                 }
             }
         });
