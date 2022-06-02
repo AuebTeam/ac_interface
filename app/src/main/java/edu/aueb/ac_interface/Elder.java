@@ -85,7 +85,7 @@ public class Elder extends AppCompatActivity {
                 final int mode_int = (activate.isSelected())?1:0;
                 if (mode_int == 1) {
                     activate.setText(resources.getString(R.string.turn_off));
-                    Toast.makeText(context,R.string.toast_act, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context,"The AC has been turned on at " + wanted_temperature +" C, on " +mode + " mode!", Toast.LENGTH_SHORT).show();
                 } else {
                     activate.setText(resources.getString(R.string.activate));
                     Toast.makeText(context,R.string.toast_deact, Toast.LENGTH_SHORT).show();

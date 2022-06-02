@@ -13,6 +13,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -115,13 +116,15 @@ public class Fan_mode extends AppCompatActivity {
         btnTurnoff.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                System.out.println("AC activated in novice mode");
                 btnTurnoff.setSelected(!btnTurnoff.isSelected());
                 final int mode_int = (btnTurnoff.isSelected())?1:0;
                 if (mode_int == 1) {
-                    btnTurnoff.setText(resources.getString(R.string.activate));
-                } else {
                     btnTurnoff.setText(resources.getString(R.string.turn_off));
+                    Toast.makeText(context,"The AC has been turned on with air flow : " + air_flow_string +
+                            ", louver height : " + louver_string , Toast.LENGTH_SHORT).show();
+                } else {
+                    btnTurnoff.setText(resources.getString(R.string.activate));
+                    Toast.makeText(context,R.string.toast_deact, Toast.LENGTH_SHORT).show();
                 }
             }
         });

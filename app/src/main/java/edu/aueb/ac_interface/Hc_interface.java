@@ -111,12 +111,12 @@ public class Hc_interface extends AppCompatActivity {
         btnTurnoff.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                System.out.println("AC activated in novice mode");
                 btnTurnoff.setSelected(!btnTurnoff.isSelected());
                 button_mode = (btnTurnoff.isSelected())?1:0;
                 if (button_mode == 1) {
                     btnTurnoff.setText(resources.getString(R.string.turn_off));
-                    Toast.makeText(context,R.string.toast_act, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context,"The AC has been turned on at " + wanted_temperature + " C, "
+                            + " mode : " + mode_string + ", louver : " + louver_string , Toast.LENGTH_SHORT).show();
                 } else {
                     btnTurnoff.setText(resources.getString(R.string.activate));
                     Toast.makeText(context,R.string.toast_deact, Toast.LENGTH_SHORT).show();

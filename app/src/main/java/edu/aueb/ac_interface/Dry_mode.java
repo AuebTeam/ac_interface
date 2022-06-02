@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -52,12 +53,20 @@ public class Dry_mode extends AppCompatActivity {
         humidity.setText("60 %");
 
         btnBack.setText(resources.getString(R.string.back));
-        btnTurnoff.setText(resources.getString(R.string.turn_off));
+        btnTurnoff.setText(resources.getString(R.string.activate));
 
         btnTurnoff.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                btnTurnoff.setSelected(!btnTurnoff.isSelected());
+                final int mode_int = (btnTurnoff.isSelected())?1:0;
+                if (mode_int == 1) {
+                    btnTurnoff.setText(resources.getString(R.string.turn_off));
+                    Toast.makeText(context,"The AC has been turned on and the humidity level is 60%", Toast.LENGTH_SHORT).show();
+                } else {
+                    btnTurnoff.setText(resources.getString(R.string.activate));
+                    Toast.makeText(context,R.string.toast_deact, Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
